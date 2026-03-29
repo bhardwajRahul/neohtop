@@ -27,6 +27,12 @@
 
 </div>
 
+<div align="center">
+  <h3>👻 Prefer the terminal? Check out <a href="https://github.com/Abdenasser/neohtop-cli">NeoHtop CLI</a></h3>
+  <p>All the power of NeoHtop, right in your terminal — built with Go + the Charm ecosystem.</p>
+  <pre>npm install -g neohtop-cli</pre>
+</div>
+
 ## Table of Contents
 - [Why NeoHtop?](#why-neohtop)
 - [Features](#features)
