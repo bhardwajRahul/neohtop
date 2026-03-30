@@ -1516,3 +1516,185 @@ footer {
     display: none;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   CLI Announcement Banner
+   ═══════════════════════════════════════════════════════════ */
+
+.cli-banner {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cli-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+  animation: shimmer 8s ease-in-out infinite alternate;
+}
+
+@keyframes shimmer {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-5%, 5%); }
+}
+
+.cli-banner-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cli-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+.cli-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.cli-ghost {
+  font-size: 1.75rem;
+  margin-right: 0.25rem;
+}
+
+.cli-subtitle {
+  font-size: 1.1rem;
+  color: #c7d2fe;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.cli-tech {
+  font-size: 0.95rem;
+  color: #a5b4fc;
+  margin-bottom: 1.5rem;
+}
+
+.cli-tech strong {
+  color: #e0e7ff;
+}
+
+.cli-install {
+  margin-bottom: 1.5rem;
+}
+
+.cli-command {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #a5f3fc;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.02em;
+  user-select: all;
+}
+
+.cli-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cli-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cli-button-primary {
+  background: #fff;
+  color: #312e81;
+}
+
+.cli-button-primary:hover {
+  background: #e0e7ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cli-button-secondary {
+  background: transparent;
+  color: #e0e7ff;
+  border: 1px solid rgba(224, 231, 255, 0.3);
+}
+
+.cli-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(224, 231, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Nav CLI badge */
+.nav-cli-link {
+  position: relative;
+}
+
+.nav-cli-badge {
+  font-size: 0.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 9999px;
+  vertical-align: super;
+  letter-spacing: 0.05em;
+  margin-left: 0.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cli-banner {
+    padding: 2rem 1.25rem;
+  }
+  .cli-title {
+    font-size: 1.5rem;
+  }
+  .cli-subtitle {
+    font-size: 1rem;
+  }
+  .cli-command {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+  .cli-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cli-button {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}

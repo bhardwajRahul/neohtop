@@ -27,10 +27,23 @@
 
 </div>
 
+<br>
+
 <div align="center">
-  <h3>👻 Prefer the terminal? Check out <a href="https://github.com/Abdenasser/neohtop-cli">NeoHtop CLI</a></h3>
-  <p>All the power of NeoHtop, right in your terminal — built with Go + the Charm ecosystem.</p>
-  <pre>npm install -g neohtop-cli</pre>
+  <table>
+    <tr>
+      <td align="center">
+        <h2>👻 NEW: <a href="https://github.com/Abdenasser/neohtop-cli">NeoHtop CLI</a> is here!</h2>
+        <p><strong>All the power of NeoHtop, right in your terminal</strong> — real-time CPU sparklines, memory bars, process tree view, search, filters, themes & more.</p>
+        <p>Built with <b>Go</b> + the <b>Charm</b> ecosystem. Works everywhere — macOS, Linux, Windows.</p>
+        <br>
+        <a href="https://github.com/Abdenasser/neohtop-cli"><img src="https://img.shields.io/badge/⭐_Star_NeoHtop_CLI-171717?style=for-the-badge&logo=github&logoColor=white" alt="Star NeoHtop CLI"></a>&nbsp;
+        <a href="https://www.npmjs.com/package/neohtop-cli"><img src="https://img.shields.io/npm/v/neohtop-cli?style=for-the-badge&logo=npm&logoColor=white&label=npm&color=CB3837" alt="npm"></a>
+        <br><br>
+        <pre>npm install -g neohtop-cli</pre>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## Table of Contents
